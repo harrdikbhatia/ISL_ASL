@@ -1,0 +1,9 @@
+/*
+  Cross-Origin-Embedder-Policy: require-corp
+  Cross-Origin-Opener-Policy: same-origin
+
+/*.wasm
+  Content-Type: application/wasm
+
+/*.task
+  Content-Type: application/octet-stream
