@@ -37,6 +37,7 @@ const App = () => {
   useEffect(() => {
     const init = async () => {
       const vision = await FilesetResolver.forVisionTasks("https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@latest/wasm");
+      // Instead of a local path, use the official Google CDN
       recognizerRef.current = await GestureRecognizer.createFromOptions(vision, {
         baseOptions: { modelAssetPath: "/sign_detector.task", delegate: "GPU" },
         runningMode: "VIDEO",
